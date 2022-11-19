@@ -25,6 +25,7 @@ const typeDefs = gql`
     type Query {
         me: User
     }
+    #use input to store data from API call
     input SavedBookInput {
         bookId: String
         authors: [String]
