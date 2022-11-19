@@ -1,5 +1,6 @@
+// graph ql through apollo server
 const { gql } = require('apollo-server-express');
-
+// define types of data
 const typeDefs = gql`
     type User {
         _id: ID
@@ -32,7 +33,7 @@ const typeDefs = gql`
         image: String
         link: String
     }
-
+    # define mutations available
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
